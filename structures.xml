@@ -1203,6 +1203,23 @@
         </fields>
     </structure>
 
+    <structure name="BSET">
+        <description>
+            SAnimSetData
+            Replace SBonesetData; SAnimSetData is a bit more general-purpose.
+            Individual STrack objects will map to items that are indexed in the splitItems array below.
+        </description>
+        <versions>
+            <version number="0" size="30" />
+        </versions>
+        <fields>
+            <field name="flags" type="uint32" />
+            <field name="animIndex" type="uint16" />
+            <field name="name" type="Reference" refTo="CHAR" />
+            <field name="splitItems" type="Reference" refTo="U16_" />
+        </fields>
+    </structure>
+
     <structure name="STS_">
         <description></description>
         <versions>
@@ -2852,14 +2869,44 @@
             <field name="modelName" type="Reference" refTo="CHAR"/>
             <field name="flags" type="uint32" default-value="0x80d53">
                 <bits>
-                    <bit mask="0x100000" name="hasMesh" />
+                    <bit mask="0x00000001" name="e_mdfTangents" />
+                    <bit mask="0x00000002" name="e_mdfBonesFixed" />
+                    <bit mask="0x00000004" name="e_mdfUVDensitiesComputed" />
+                    <bit mask="0x00000008" name="e_mdfRelativeBounds" />
+
+                    <bit mask="0x00000010" name="e_mdfSectionBoundsFixed" />
+
+                    <bit mask="0x00000020" name="e_mdfTrackSetsComputed" />
+                    <bit mask="0x00000040" name="e_mdfTrackCollectionSorted" />
+
+                    <bit mask="0x00000080" name="e_mdModelAcceptsSplats" />
+
+                    <bit mask="0x00000800" name="e_mdTrackAnimatedBaseFlagValid" />
+
+                    <bit mask="0x00001000" name="e_mdFileDirty" />
+
+                    <bit mask="0x00004000" name="e_mdFOWDoNotUseTint" />
+                    <bit mask="0x00008000" name="e_mdInstancedVB" />
+                    <bit mask="0x00010000" name="e_mdForceSampledFOW" />
+                    <bit mask="0x00020000" name="e_mdInstancedModel" />
+                    <bit mask="0x00040000" name="e_mdNeverUseFOW" />
+
+                    <bit mask="0x00080000" name="e_mdBoneAnimatedFlagSolved" />
+                    <bit mask="0x00100000" name="e_mdAllowLocalLightShadows" />
+                    <bit mask="0x00200000" name="e_mdAvoidSampledFOW" />
+                    <!--bit mask="0x100000" name="hasMesh"/
+                    TODO: Change all bits
+                    -->
                 </bits>
             </field>
             <field name="sequences" type="Reference" refTo="SEQS"  />
             <field name="sequenceTransformationCollections" type="Reference" refTo="STC_" />
             <field name="sequenceTransformationGroups" type="Reference" refTo="STG_" />
-            <field name="unknownRefBeta01" type="Reference" />
-            <field name="unknown03" type="uint32" expected-value="0" />
+            <!--// TODO.-->
+            <field name="animSets" type="Reference"  refTo="BSET" />
+            <!--// TODO.-->
+            <!--// This is used at runtime by the bonesets.-->
+            <field name="splitCount" type="uint32" />
             <field name="sts" type="Reference" refTo="STS_"/>
             <field name="bones"  type="Reference" refTo="BONE" />
             <field name="numberOfBonesToCheckForSkin" type="uint32" />
@@ -2882,17 +2929,11 @@
             <field name="vertices" type="Reference" refTo="U8__"/>
             <field name="divisions" type="Reference" refTo="DIV_"/>
             <field name="boneLookup" type="Reference" refTo="U16_"/>
-            <field name="boundings" type="BNDSV0" />
-            <field name="maybeBoundingsFlags" type="uint32" expected-value="0" />
-            <field name="unknownRefBeta02" type="Reference" />
-            <field name="unknownRefBeta03" type="Reference" />
-            <field name="unknownRefBeta04" type="Reference" />
-            <field name="unknown14" type="uint32" expected-value="0" />
-            <field name="unknown15" type="uint32" expected-value="0" />
-            <field name="unknown16" type="uint32" default-value="0" />
-            <field name="unknown17" type="uint32" expected-value="0" />
-            <field name="unknown18" type="uint32" expected-value="0" />
-            <field name="unknown19" type="uint32" default-value="0" />
+            <field name="boundings" type="BNDS" />
+            <field name="maybeBoundingsFlags" type="BNDS"/>
+            <field name="collisionIndices" type="Reference" refTo="U16_"/>
+            <field name="collisionPositions" type="Reference" refTo="VEC3"/>
+            <field name="collisionFaceNormals" type="Reference" refTo="VEC3"/>
             <field name="attachmentPoints" type="Reference" refTo="ATT_" />
             <field name="attachmentPointAddons" type="Reference" refTo="U16_"/>
             <field name="lights" type="Reference" refTo="LITE" />
