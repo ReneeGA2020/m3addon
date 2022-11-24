@@ -74854,7 +74854,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0xc0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -77923,31 +77923,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x45a1af92</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x45a1af92</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x1bccad6c</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x1bccad6c</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Material #29</name>
@@ -77959,7 +77963,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -81028,31 +81032,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x4f1c99fd</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x4f1c99fd</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x60e8749d</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x60e8749d</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Material #1778</name>
@@ -81064,7 +81072,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -84133,31 +84141,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x4</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x683dc255</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x683dc255</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x7d49f8dd</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x7d49f8dd</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Material #1</name>
@@ -84169,7 +84181,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -87238,31 +87250,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x5ee8408c</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x5ee8408c</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x458c9fc2</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x458c9fc2</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>BirthOpac2</name>
@@ -87274,7 +87290,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0xc0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -90343,31 +90359,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x52aed5</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x52aed5</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x4b45ee35</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x4b45ee35</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2Particlesdust</name>
@@ -90379,7 +90399,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -93448,31 +93468,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x218549f3</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x218549f3</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x64c31387</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x64c31387</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>BirthOpac2~DUP.~</name>
@@ -93484,7 +93508,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0xc0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -96553,31 +96577,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x1ca53efb</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x1ca53efb</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x55bc4648</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x55bc4648</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2ParticlesSmallBlastDebris</name>
@@ -96589,7 +96617,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -99658,31 +99686,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x2248ba28</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x2248ba28</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x1357a852</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x1357a852</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2ParticlesBlastFlareStreamers</name>
@@ -99694,7 +99726,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -102763,31 +102795,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x64fd54be</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x64fd54be</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x4f2397fc</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x4f2397fc</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2ParticlesMushroomCap</name>
@@ -102799,7 +102835,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -105868,31 +105904,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x4e8df19b</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x4e8df19b</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x351ec8ee</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x351ec8ee</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2ParticlesBlastFlare</name>
@@ -105904,7 +105944,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -108973,31 +109013,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x49b615be</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x49b615be</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x3954073f</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x3954073f</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2Particles01fire05</name>
@@ -109009,7 +109053,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -112078,31 +112122,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x65971bff</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x65971bff</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x58724b7a</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x58724b7a</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>Mat_SC2Particless04decaysmoke</name>
@@ -112114,7 +112162,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.03999999910593033</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.5</specMult>
 		<emisMult>1.5</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -115183,31 +115231,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x49818611</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x49818611</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x79d03ce3</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x79d03ce3</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>OrcBuildingSplat_Alive_Mat</name>
@@ -115219,7 +115271,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.0</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.0</specMult>
 		<emisMult>1.0</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -118288,31 +118340,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0xb74093</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0xb74093</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x6fe8407f</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x6fe8407f</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 	<standardMaterials-element>
 		<name>OrcBuildingSplat_Dead_Mat</name>
@@ -118324,7 +118380,7 @@
 		<specularity>20.0</specularity>
 		<depthBlendFalloff>0.0</depthBlendFalloff>
 		<cutoutThresh>0x0</cutoutThresh>
-		<unknownAt41>0x000000</unknownAt41>
+		<padding>0x000000</padding>
 		<specMult>1.0</specMult>
 		<emisMult>1.0</emisMult>
 		<diffuseLayer structureName="LAYR" structureVersion="25" >
@@ -121393,31 +121449,35 @@
 				<unknowned0e748d>0x0</unknowned0e748d>
 			</ambientOcclussionLayer-element>
 		</ambientOcclussionLayer>
-		<unknown2481ae8a>0x0</unknown2481ae8a>
+		<materialClass>0x0</materialClass>
 		<layerBlendType>0x2</layerBlendType>
 		<emisBlendType>0x2</emisBlendType>
 		<emisMode>0x2</emisMode>
 		<specType>0x0</specType>
 		<parallaxHeight>
-			<header>
-				<interpolationType>0x1</interpolationType>
-				<animFlags>0x8</animFlags>
-				<animId>0x54cd13e0</animId>
-			</header>
-			<initValue>0.0</initValue>
-			<nullValue>0.0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
+			<value>
+				<header>
+					<interpolationType>0x1</interpolationType>
+					<animFlags>0x8</animFlags>
+					<animId>0x54cd13e0</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
 		</parallaxHeight>
-		<unknownAnimationRef2>
-			<header>
-				<interpolationType>0x0</interpolationType>
-				<animFlags>0x0</animFlags>
-				<animId>0x617114e7</animId>
-			</header>
-			<initValue>0x0</initValue>
-			<nullValue>0x0</nullValue>
-			<exportDataIndex>0xffffffff</exportDataIndex>
-		</unknownAnimationRef2>
+		<motionBlur>
+			<value>
+				<header>
+					<interpolationType>0x0</interpolationType>
+					<animFlags>0x0</animFlags>
+					<animId>0x617114e7</animId>
+				</header>
+				<initValue>0.0</initValue>
+				<nullValue>0.0</nullValue>
+				<exportDataIndex>0xffffffff</exportDataIndex>
+			</value>
+		</motionBlur>
 	</standardMaterials-element>
 </standardMaterials>
 <displacementMaterials></displacementMaterials>

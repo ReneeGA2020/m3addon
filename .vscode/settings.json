@@ -38,4 +38,7 @@
     "search.exclude": {
         "**/test": true,
     },
+    "python.analysis.extraPaths": [
+        "blender_autocomplete/2.91"
+    ],
 }

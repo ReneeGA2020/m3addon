@@ -1502,7 +1502,7 @@
             <version number="26" size="464" />
         </versions>
         <fields>
-            <field name="unknown2daf9c00" type="uint32" expected-value="0" />
+            <field name="id" type="uint32" expected-value="0" />
             <field name="imagePath" type="Reference" refTo="CHAR" />
             <field name="color" type="ColorAnimationReference" />
             <field name="flags" type="uint32" default-value="0xec">
@@ -1511,11 +1511,16 @@
                     <bit mask="0x8" name="textureWrapY" />
                     <bit mask="0x10" name="invertColor" />
                     <bit mask="0x20" name="clampColor" />
+                    <bit mask="0x40" name="c_rgbMultiply" />
+                    <bit mask="0x80" name="c_rgbAdd" />
                     <bit mask="0x100" name="useParticleFlipBook" />
                     <bit mask="0x200" name="isVideo" /> <!-- if texture is ogg video -->
                     <bit mask="0x400" name="colorEnabled" />
-                    <bit mask="0x4000" name="ignoredFresnelFlag1" />
-                    <bit mask="0x8000" name="ignoredFresnelFlag2" />
+                    <bit mask="0x800" name="c_useAlphaFactor" />
+                    <bit mask="0x1000" name="c_useUVTransform" />
+                    <bit mask="0x2000" name="c_useUVRandomOffset" />
+                    <bit mask="0x4000" name="c_useFresnelTransform" />
+                    <bit mask="0x8000" name="c_normalizeFresnel" />
                     <bit mask="0x10000" name="fresnelLocalTransform" />
                     <bit mask="0x20000" name="fresnelDoNotMirror" />
                 </bits>
@@ -1534,7 +1539,7 @@
             <field name="brightMult" type="FloatAnimationReference" />
             <field name="midtoneOffset" type="FloatAnimationReference" />
             <!-- unknown3b61017a needs to be 2 for volume noise materials -->
-            <field name="unknown3b61017a" type="uint32" default-value="0" />
+            <field name="proceduralType" type="uint32" default-value="0" />
             <field name="noiseAmp" type="float" default-value="0.8" since-version="24" />
             <field name="noiseFreq" type="float" default-value="0.5" since-version="24" />
             <field name="rttChannel" type="int32" default-value="-1" />
@@ -1551,24 +1556,19 @@
             <field name="uvOffset" type="Vector2AnimationReferenceV0" />
             <field name="uvAngle" type="Vector3AnimationReferenceV0" />
             <field name="uvTiling" type="Vector2AnimationReferenceV0" />
-            <field name="unknowna4ec0796" type="UInt32AnimationReference" />
-            <field name="unknowna44bf452" type="FloatAnimationReference" />
+            <field name="translationWTrack" type="FloatAnimationReference" />
+            <field name="scaleWTrack" type="FloatAnimationReference" />
             <field name="brightness" type="FloatAnimationReference" />
             <field name="triPlanarOffset" type="Vector3AnimationReferenceV0" since-version="24"/>
             <field name="triPlanarScale" type="Vector3AnimationReferenceV0" since-version="24"/> <!-- default (1.0, 1.0, 1.0)-->
-            <field name="unknownbd3f7b5d" type="int32" default-value="-1" />
+            <field name="uvEmitterHint" type="int32" default-value="-1" />
             <field name="fresnelType" type="uint32" default-value="0" />
             <field name="fresnelExponent" type="float" default-value="4.0" />
             <field name="fresnelMin" type="float" default-value="0.0" />
             <field name="fresnelMaxOffset" type="float" default-value="1.0" /><!-- fresnelMin + fresnelMaxOffset = fresnelMax-->
-            <field name="unknown15" type="float" default-value="1.0" />
-            <field name="unknown763da0ad" size="8" default-value="0x0000000000000000" since-version="25" />
-            <field name="fresnelInvertedMaskX" type="float" default-value="1.0" since-version="25" /> <!-- default=(1.0, 1.0, 1.0)-->
-            <field name="fresnelInvertedMaskY" type="float" default-value="1.0" since-version="25" />
-            <field name="fresnelInvertedMaskZ" type="float" default-value="1.0" since-version="25" />
-            <field name="fresnelRotationYaw" type="float" default-value="0.0" since-version="25" />
-            <field name="fresnelRotationPitch" type="float" default-value="0.0" since-version="25" />
-            <field till-version="25" name="unknowned0e748d" type="uint32" default-value="0" since-version="25" />
+            <field name="fresnelTranslate" type="VEC3" />
+            <field name="fresnelMask" type="VEC3" />
+            <field name="fresnelRotate" type="VEC2" />
         </fields>
     </structure>
 
@@ -1652,7 +1652,7 @@
             <field name="specularity" type="float" />
             <field name="depthBlendFalloff" type="float" default-value="0.0" /> <!-- Only used if the bit useDepthBlendFalloff of additionalFlags is set, typically set for particle systems -->
             <field name="cutoutThresh" type="uint8" default-value="0" />
-            <field name="unknownAt41" size="3" expected-value="0x000000" />
+            <field name="padding" size="3" expected-value="0x000000" />
             <field name="specMult" type="float" default-value="1.0" />
             <field name="emisMult" type="float" default-value="1.0" />
             <field name="envConstMult" type="float" since-version="20" default-value="1.0" />
@@ -1676,13 +1676,13 @@
             <field name="normalBlendMask2" type="Reference" refTo="LAYR" since-version="19" />
             <field name="normalBlendNormal1" type="Reference" refTo="LAYR" since-version="19" />
             <field name="normalBlendNormal2" type="Reference" refTo="LAYR" since-version="19" />
-            <field name="unknown2481ae8a" type="uint32" default-value="0"/>
+            <field name="materialClass" type="uint32" default-value="0"/>
             <field name="layerBlendType" type="uint32" />
             <field name="emisBlendType" type="uint32" />
             <field name="emisMode" type="uint32" default-value="2" />
             <field name="specType" type="uint32" />
-            <field name="parallaxHeight" type="FloatAnimationReference" />
-            <field name="unknownAnimationRef2" type="UInt32AnimationReference" />
+            <field name="parallaxHeight" type="SR32" />
+            <field name="motionBlur" type="SR32" />
             <field name="normalBlendMaskFactor" type="Reference" refTo="SR32" since-version="19" />
             <!-- ^ one element per each color channel of normalBlendMask1 and normalBlendMask2 - a maximum expected amount of elements is 8 (2 masks x RGBA) -->
         </fields>
