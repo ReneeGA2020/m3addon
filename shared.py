@@ -2050,12 +2050,12 @@ def transferAnimation(transferer):
     transferer.transferFloat("movementSpeed")
     transferer.transferInt("frequency")
     transferer.transferBit("flags", "notLooping")
-    transferer.transferBit("flags", "alwaysGlobal")
-    transferer.transferBit("flags", "globalInPreviewer")
+    transferer.transferBit("flags", "c_sequenceIsDefaultAnim")
+    transferer.transferBit("flags", "c_sequenceGlobalLoop")
 
 
 def transferSTC(transferer):
-    transferer.transferBoolean("runsConcurrent")
+    transferer.transferBoolean("subAnim")
     transferer.transferInt("priority")
 
 

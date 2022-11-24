@@ -1212,7 +1212,7 @@ class M3AnimatedPropertyReference(bpy.types.PropertyGroup):
 class M3TransformationCollection(bpy.types.PropertyGroup):
     name: bpy.props.StringProperty(options=set(), default="all")
     animatedProperties: bpy.props.CollectionProperty(options=set(), type=M3AnimatedPropertyReference)
-    runsConcurrent: bpy.props.BoolProperty(options=set(), default=True)
+    subAnim: bpy.props.BoolProperty(options=set(), default=True)
     priority: bpy.props.IntProperty(options=set(), subtype="UNSIGNED")
 
 
@@ -1228,8 +1228,8 @@ class M3Animation(bpy.types.PropertyGroup):
     movementSpeed: bpy.props.FloatProperty(options=set())
     frequency: bpy.props.IntProperty(options=set(), subtype="UNSIGNED")
     notLooping: bpy.props.BoolProperty(options=set())
-    alwaysGlobal: bpy.props.BoolProperty(options=set())
-    globalInPreviewer: bpy.props.BoolProperty(options=set())
+    c_sequenceIsDefaultAnim: bpy.props.BoolProperty(options=set())
+    c_sequenceGlobalLoop: bpy.props.BoolProperty(options=set())
 
 
 class M3StandardMaterial(bpy.types.PropertyGroup):
@@ -1995,8 +1995,8 @@ class AnimationSequencesPropPanel(bpy.types.Panel):
             col.prop(animation, "frequency", text="Frequency")
             col = layout.column_flow(columns=2)
             col.prop(animation, "notLooping", text="Doesn't Loop")
-            col.prop(animation, "alwaysGlobal", text="Always Global")
-            col.prop(animation, "globalInPreviewer", text="Global In Previewer")
+            col.prop(animation, "c_sequenceIsDefaultAnim", text="Always Global")
+            col.prop(animation, "c_sequenceGlobalLoop", text="Global In Previewer")
 
             if not len(scene.m3_rigid_bodies) > 0:
                 return
@@ -2049,7 +2049,7 @@ class AnimationSequenceTransformationCollectionsPanel(bpy.types.Panel):
             transformationCollection = animation.transformationCollections[index]
             layout.separator()
             layout.prop(transformationCollection, "name", text="Name")
-            layout.prop(transformationCollection, "runsConcurrent", text="Runs Concurrent")
+            layout.prop(transformationCollection, "subAnim", text="Runs Concurrent")
             layout.prop(transformationCollection, "priority", text="Priority")
             row = layout.row()
             row.operator("m3.stc_select", text="Select FCurves")
