@@ -1494,11 +1494,11 @@
     <structure name="LAYR">
         <description>Describes a layer of a material</description>
         <versions>
-            <version number="20" size="352" />
-            <version number="21" size="352" />
-            <version number="22" size="352" />
-            <version number="24" size="432" />
-            <version number="25" size="464" />
+            <version number="20" size="356" />
+            <version number="21" size="356" />
+            <version number="22" size="356" />
+            <version number="24" size="436" />
+            <version number="25" size="468" />
             <version number="26" size="464" />
         </versions>
         <fields>
@@ -1569,6 +1569,7 @@
             <field name="fresnelTranslate" type="VEC3V0" since-version="25"/>
             <field name="fresnelMask" type="VEC3V0" since-version="25"/>
             <field name="fresnelRotate" type="VEC2V0" since-version="25"/>
+            <field till-version="25" name="uvDensity" type="float" />
         </fields>
     </structure>
 
