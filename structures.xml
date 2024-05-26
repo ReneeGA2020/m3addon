@@ -1333,7 +1333,7 @@
         </versions>
         <fields>
             <field name="nodeIndex" type="uint32" default-value="0" />
-            <field name="boundingsAnimation" type="BNDSV0AnimationReferenceV0" />
+            <field name="bounding" type="BNDSV0AnimationReferenceV0" />
         </fields>
     </structure>
 
@@ -1890,8 +1890,8 @@
         </versions>
         <fields>
             <field name="name" type="Reference" refTo="CHAR"/>
-            <field name="color_layer" type="Reference" refTo="LAYR"/>
-            <field name="unknown_layer" type="Reference" refTo="LAYR"/>
+            <field name="colorLayer" type="Reference" refTo="LAYR"/>
+            <field name="unknownLayer1" type="Reference" refTo="LAYR"/>
             <field name="starbursts" type="Reference" refTo="LFSB"/>
             <field name="unknown7f492c0a" type="uint32" default-value="0x40000000" till-version="2"/>
             <field name="unk00" type="uint32" till-version="2"/>
@@ -2211,10 +2211,10 @@
             <field name="splatLifeTimeDecayTo" type="float" />
             <field name="attenuationPlaneDistance" type="float" />
             <field name="active" type="UInt32AnimationReference" />
-            <field name="splatLayer" type="uint32" since-version="4" />
-            <field name="lodReduce" type="uint32" since-version="4" />
-            <field name="lodCut" type="uint32" since-version="4" />
-            <field name="flags" type="uint32" default-value="0" since-version="4">
+            <field name="splatLayer" type="uint32" />
+            <field name="lodReduce" type="uint32" />
+            <field name="lodCut" type="uint32" />
+            <field name="flags" type="uint32" default-value="0">
                 <bits>
                     <bit mask="0x1" name="staticPosition" />
                     <bit mask="0x2" name="unknownFlag0x2" />
@@ -2222,7 +2222,6 @@
                     <bit mask="0x8" name="unknownFlag0x8" />
                 </bits>
             </field>
-            <!-- <field name="unknowna0283820" size="18" till-version="4" /> -->
         </fields>
     </structure>
 
