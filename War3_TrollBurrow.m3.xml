@@ -168,7 +168,7 @@
 <sequenceTransformationCollections structureName="STC_" structureVersion="4" >
 	<sequenceTransformationCollections-element>
 		<name>Stand 01_full</name>
-		<subAnim>0x0</subAnim>
+		<runsConcurrent>0x0</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x0</stsIndex>
 		<stsIndexCopy>0x0</stsIndexCopy>
@@ -3073,7 +3073,7 @@
 	</sequenceTransformationCollections-element>
 	<sequenceTransformationCollections-element>
 		<name>Birth_full</name>
-		<subAnim>0x0</subAnim>
+		<runsConcurrent>0x0</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x1</stsIndex>
 		<stsIndexCopy>0x1</stsIndexCopy>
@@ -28434,7 +28434,7 @@
 	</sequenceTransformationCollections-element>
 	<sequenceTransformationCollections-element>
 		<name>Death_full</name>
-		<subAnim>0x0</subAnim>
+		<runsConcurrent>0x0</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x2</stsIndex>
 		<stsIndexCopy>0x2</stsIndexCopy>
@@ -30717,7 +30717,7 @@
 	</sequenceTransformationCollections-element>
 	<sequenceTransformationCollections-element>
 		<name>Decay_full</name>
-		<subAnim>0x0</subAnim>
+		<runsConcurrent>0x0</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x3</stsIndex>
 		<stsIndexCopy>0x3</stsIndexCopy>
@@ -57586,7 +57586,7 @@
 	</sequenceTransformationCollections-element>
 	<sequenceTransformationCollections-element>
 		<name>Portrait Stand 01_full</name>
-		<subAnim>0x0</subAnim>
+		<runsConcurrent>0x0</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x4</stsIndex>
 		<stsIndexCopy>0x4</stsIndexCopy>
@@ -64150,7 +64150,7 @@
 	</sequenceTransformationCollections-element>
 	<sequenceTransformationCollections-element>
 		<name>GLstand_TrackSet_GLstand</name>
-		<subAnim>0x1</subAnim>
+		<runsConcurrent>0x1</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x5</stsIndex>
 		<stsIndexCopy>0x5</stsIndexCopy>
@@ -64424,7 +64424,7 @@
 	</sequenceTransformationCollections-element>
 	<sequenceTransformationCollections-element>
 		<name>GLstand_full</name>
-		<subAnim>0x1</subAnim>
+		<runsConcurrent>0x1</runsConcurrent>
 		<priority>0x0</priority>
 		<stsIndex>0x6</stsIndex>
 		<stsIndexCopy>0x6</stsIndexCopy>

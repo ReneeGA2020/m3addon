@@ -1167,7 +1167,7 @@
         </versions>
         <fields>
             <field name="name" type="Reference"  refTo="CHAR" />
-            <field name="subAnim" type="uint16" default-value="0" />
+            <field name="runsConcurrent" type="uint16" default-value="0" />
             <field name="priority" type="uint16" default-value="0" />
             <field name="stsIndex" type="uint16"/>
             <field name="stsIndexCopy" type="uint16"/>
@@ -1206,9 +1206,9 @@
             <field name="flags" type="uint32" default-value="0" >
                 <bits>
                     <bit mask="0x1" name="notLooping" />
-                    <bit mask="0x2" name="c_sequenceIsDefaultAnim" />
-                    <bit mask="0x4" name="c_sequenceIsSubAnim" />
-                    <bit mask="0x8" name="c_sequenceGlobalLoop" />
+                    <bit mask="0x2" name="alwaysGlobal" />
+                    <bit mask="0x4" name="c_sequenceIsrunsConcurrent" />
+                    <bit mask="0x8" name="globalInPreviewer" />
                 </bits>
             </field>
             <field name="frequency" type="uint32" />
@@ -2695,17 +2695,19 @@
             <version number="9" size="760" />
         </versions>
         <fields>
-            <field name="boneIndex" type="uint16" />
-            <field name="unknown13c070e5" type="uint16" expected-value="0"/> <!-- unused? or it might belong to boneIndex -->
+            <field name="boneIndex" type="uint32" />
             <field name="materialReferenceIndex" type="uint32" />
             <field name="additionalFlags" type="uint32" default-value="0x8" since-version="8">
                 <bits>
+                    <bit mask="0x1" name="rondomSpeed" />
+                    <bit mask="0x2" name="rondomLifespan" />
+                    <bit mask="0x4" name="rondomMass" />
                     <bit mask="0x8" name="worldSpace" />
                 </bits>
             </field>
             <field name="speed" type="FloatAnimationReference" />
-            <field name="unknown75e0b576" type="FloatAnimationReference" />
-            <field till-version="6" name="unknownd30655aa" type="uint32" expected-value="0" /> <!-- haven't seen a Blizzard model where this wouldn't be 0 -->
+            <field name="speedMax" type="FloatAnimationReference" />
+            <field till-version="7" name="rondomSpeed" type="uint32" />
 
             <!-- till v6: pitch then yaw -->
             <field name="pitch" type="FloatAnimationReference" till-version="6" />
@@ -2715,45 +2717,43 @@
             <field name="yaw" type="FloatAnimationReference" since-version="8" />
             <field name="pitch" type="FloatAnimationReference" since-version="8" />
 
-            <field name="unknownee00ae0a" type="FloatAnimationReference" />
-            <field name="unknown1686c0b7" type="FloatAnimationReference" />
+            <field name="horizontalSpread" type="FloatAnimationReference" />
+            <field name="verticalSpread" type="FloatAnimationReference" />
             <field name="lifespan" type="FloatAnimationReference" />
-            <field name="unknown9eba8df8" type="FloatAnimationReference" />
-            <field name="unknown26271cbe" type="uint32" expected-value="0" />
-            <field name="unknownda0542fa" type="uint32" expected-value="0" />
-            <field name="unknown76f48851" type="uint32" expected-value="0" />
-            <field name="unknown874bdc23" type="uint32" expected-value="0" till-version="6" />
-            <field name="gravity" type="float" default-value="0"/>
-            <field name="sizeMiddleTime" type="float" default-value="1.0" />
-            <field name="colorMiddleTime" type="float" default-value="1.0" />
-            <field name="alphaMiddleTime" type="float" default-value="1.0" />
-            <field name="rotationMiddleTime" type="float" default-value="1.0" />
-            <field name="sizeMiddleHoldTime" type="float" default-value="0.0" since-version="8" />
-            <field name="colorMiddleHoldTime" type="float" default-value="0.0" since-version="8" />
-            <field name="alphaMiddleHoldTime" type="float" default-value="0.0" since-version="8" />
-            <field name="rotationMiddleHoldTime" type="float" default-value="0.0" since-version="8" />
+            <field name="lifespanMax" type="FloatAnimationReference" />
+            <field till-version="7" name="rondomLifespan" type="uint32" />
+            <field name="killSphereRadiusSqr" type="uint32" />
+            <field name="gravityX" type="float" />
+            <field name="gravityY" type="float" />
+            <field name="gravityZ" type="float" />
+            <field name="sizeMiddleTime" type="float" default-value="1.0" since-version="6"/>
+            <field name="colorMiddleTime" type="float" default-value="1.0" since-version="6"/>
+            <field name="alphaMiddleTime" type="float" default-value="1.0" since-version="6"/>
+            <field name="rotationMiddleTime" type="float" default-value="1.0" since-version="6"/>
+            <field name="sizeMiddleHoldTime" type="float" default-value="0.0" since-version="7" />
+            <field name="colorMiddleHoldTime" type="float" default-value="0.0" since-version="7" />
+            <field name="alphaMiddleHoldTime" type="float" default-value="0.0" since-version="7" />
+            <field name="rotationMiddleHoldTime" type="float" default-value="0.0" since-version="7" />
             <field name="size" type="Vector3AnimationReferenceV0" />
+            <field name="sizeMiddleTime_old" type="float" default-value="1.0" till-version="5"/>
             <field name="rotation" type="Vector3AnimationReferenceV0" />
+            <field name="rotationMiddleTime" type="float" default-value="1.0" till-version="5"/>
             <field name="baseColoring" type="ColorAnimationReference" />
             <field name="centerColoring" type="ColorAnimationReference" />
             <field name="tipColoring" type="ColorAnimationReference" />
+            <field name="colorMiddleHoldTime" type="float" default-value="0.0" till-version="5" />
+            <field name="alphaMiddleHoldTime" type="float" default-value="0.0" till-version="5" />
             <field name="drag" type="float" default-value="0.0" />
 
-            <field name="mass" type="float" default-value="1.0" since-version="8" />
-            <field name="massProbablyUnused" type="float" default-value="0.0" since-version="8" />
+            <field name="randomMass" type="uint32" till-version="7" />
+            <field name="mass" type="float" default-value="1.0" />
+            <field name="massMax" type="float" default-value="0.0" />
+            <field name="massSizeMultiplier" type="float" default-value="0.0" />
+            <field name="worldSpace" type="uint32" till-version="7" />
+            <field name="group" type="uint32" />
+            <field name="forceGroup" type="uint32" default-value="0" since-version="4" /> <!-- always 0 on Blizzard models expect 3 cases (LarvaPortrait.m3 OverlordPortrait.m3 HydraliskPortrait.m3) where it's 0x41200000 -->
+            <field name="worldForceMassMultiplier" type="float" default-value="1.0" since-version="9" />
 
-            <field name="massProbablyUnused" type="float" default-value="0.0" till-version="6" />
-            <field name="mass" type="float" default-value="1.0" till-version="6" />
-            <field name="unknownc7004d01" type="float" default-value="0.0" /> <!-- almost always 0.0 on Blizzard models, few occurences where it's 10.0 ; could be some multiplier related to mass?? -->
-
-            <field name="unknown20683e1b" type="uint32" default-value="0" till-version="6" /> <!-- always 0 on Blizzard models expect 3 cases (LarvaPortrait.m3 OverlordPortrait.m3 HydraliskPortrait.m3) where it's 0x41200000 -->
-            <field name="worldSpace" type="uint32" default-value="0" till-version="6" /> <!-- 0x0 or 0x1 (off/on) -->
-            <field name="localForceChannels" type="uint16" default-value="0" />
-            <field name="worldForceChannels" type="uint16" default-value="0" />
-            <field name="localForceChannelsCopy" type="uint16" default-value="0" />
-            <field name="worldForceChannelsCopy" type="uint16" default-value="0" />
-
-            <field name="unknownfb168d8c" type="uint32" expected-value="0" since-version="9" /> <!-- haven't seen a Blizzard model where this wouldn't be 0 -->
             <field name="surfaceNoiseAmplitude" type="float" />
             <field name="surfaceNoiseNumberOfWaves" type="float" />
             <field name="surfaceNoiseFrequency" type="float" />
@@ -2785,10 +2785,10 @@
                     <bit mask="0x2000" name="accurateGPUTangents" />
                 </bits>
             </field>
-            <field name="sizeSmoothing" type="uint32" default-value="0" />
-            <field name="colorSmoothing" type="uint32" default-value="0" />
-            <field name="friction" type="float" default-value="1.0" since-version="8" />
-            <field name="bounce" type="float" default-value="0.0" since-version="8" />
+            <field name="sizeSmoothing" type="uint32" default-value="0" since-version="7"/>
+            <field name="colorSmoothing" type="uint32" default-value="0" since-version="7"/>
+            <field name="friction" type="float" default-value="1.0" />
+            <field name="bounce" type="float" default-value="0.0" />
             <field name="lodReduce" type="uint32" default-value="2" />
             <field name="lodCut" type="uint32" default-value="0" />
 
