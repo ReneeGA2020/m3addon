@@ -1947,9 +1947,9 @@
     <structure name="PAR_">
         <description>Particle System</description>
         <versions>
-            <version number="10" size="1292" />
-            <version number="11" size="1296" />
-            <version number="12" size="1320" />
+            <version number="10" size="1296" />
+            <version number="11" size="1300" />
+            <version number="12" size="1316" />
             <version number="17" size="1460" />
             <version number="18" size="1464" />
             <version number="19" size="1464" />
@@ -1971,14 +1971,14 @@
             </field>
             <field name="emissionSpeed1" type="FloatAnimationReference" />
             <field name="emissionSpeed2" type="FloatAnimationReference" />
-            <field till-version="12" name="randomizeWithEmissionSpeed2" type="uint32" />
+            <field till-version="16" name="randomizeWithEmissionSpeed2" type="uint32" />
             <field name="emissionAngleX" type="FloatAnimationReference" />
             <field name="emissionAngleY" type="FloatAnimationReference" />
             <field name="emissionSpreadX" type="FloatAnimationReference" />
             <field name="emissionSpreadY" type="FloatAnimationReference" />
             <field name="lifespan1" type="FloatAnimationReference" />
             <field name="lifespan2" type="FloatAnimationReference" />
-            <field till-version="12" name="randomizeWithLifespan2" type="uint32" />
+            <field till-version="16" name="randomizeWithLifespan2" type="uint32" />
             <field name="killSphere" type="float" default-value="0.0" />
             <field name="xAcceleration" type="float" />
             <field name="yAcceleration" type="float" />
@@ -1987,28 +1987,29 @@
             <field name="colorAnimationMiddle" type="float" default-value="0.5" since-version="12" />
             <field name="alphaAnimationMiddle" type="float" default-value="0.5" since-version="12" />
             <field name="rotationAnimationMiddle" type="float" default-value="0.5" since-version="12" />
-            <field name="sizeHoldTime" type="float" default-value="0.0" since-version="17" /> <!-- was unknown82a208f7 -->
-            <field name="colorHoldTime" type="float" default-value="0.0" since-version="17" /><!-- was unknown93aad73b -->
-            <field name="alphaHoldTime" type="float" default-value="0.0" since-version="17" /><!-- was unknown74620ffe -->
-            <field name="rotationHoldTime" type="float" default-value="0.0" since-version="17" /><!-- was unknown1525cb58 -->
-            <field name="unknown5289d695" size="80" since-version="10" till-version="11" /> <!-- 2 animated props ; similar to particleSizes1 and rotationValues1, but doesn't match in size -->
-            <field name="particleSizes1" type="Vector3AnimationReferenceV0" since-version="12" />
-            <field name="rotationValues1" type="Vector3AnimationReferenceV0" since-version="12" />
-            <!-- START - probably incorrect before v12 (although size of the block matches) -->
+            <field name="sizeHoldTime" type="float" default-value="0.0" since-version="13" /> <!-- was unknown82a208f7 -->
+            <field name="colorHoldTime" type="float" default-value="0.0" since-version="13" /><!-- was unknown93aad73b -->
+            <field name="alphaHoldTime" type="float" default-value="0.0" since-version="13" /><!-- was unknown74620ffe -->
+            <field name="rotationHoldTime" type="float" default-value="0.0" since-version="13" /><!-- was unknown1525cb58 -->
+            <field name="particleSizes1" type="Vector3AnimationReferenceV0" />
+            <field till-version="11" name="sizeAnimationMiddle_old" type="float" since-version="12" />
+            <field name="rotationValues1" type="Vector3AnimationReferenceV0" />
+            <field till-version="11" name="rotationAnimationMiddle_old" type="float" />
             <field name="initialColor1" type="ColorAnimationReference" />
             <field name="middleColor1" type="ColorAnimationReference" />
             <field name="finalColor1" type="ColorAnimationReference" />
-            <!-- END - probably incorrect before v12 (although size of the block matches) -->
+            <field till-version="11" name="colorAnimationMiddle_old" type="float" />
+            <field till-version="11" name="alphaAnimationMiddle_old" type="float" />
             <field name="drag" type="float" />
-            <field name="randomizeWithMass2" type="uint32" since-version="12" till-version="12" /> <!-- TODO: transfer: set 0x4 on additionalFlags -->
+            <field name="randomizeWithMass2" type="uint32" till-version="16" /> <!-- TODO: transfer: set 0x4 on additionalFlags -->
             <field name="mass" type="float" default-value="0.001" />
             <field name="mass2" type="float" default-value="1.0" />
             <field name="massSizeMultiplier" type="float" default-value="1.0" since-version="12" />
-            <field name="trailingEnabled" type="uint32" till-version="12" /> <!-- TODO: transfer: set 0x8 on additionalFlags -->
+            <field name="trailingEnabled" type="uint32" till-version="16" /> <!-- TODO: transfer: set 0x8 on additionalFlags -->
             <field name="group" type="uint32" />
             <field name="localForceChannels" type="uint16" default-value="0" since-version="10" />
             <field name="worldForceChannels" type="uint16" default-value="0" since-version="10" />
-            <field name="worldForceFieldMassMultiplier" type="uint32" default-value="0" since-version="24" />
+            <field name="worldForceFieldMassMultiplier" type="uint32" default-value="1" since-version="24" />
             <field name="noiseAmplitude" type="float" default-value="0.0" />
             <field name="noiseFrequency" type="float" default-value="0.0" />
             <field name="noiseCohesion" type="float" default-value="0.0" />
@@ -2060,7 +2061,7 @@
             <field name="particleType" type="uint32"/>
             <field name="lengthWidthRatio" type="float" default-value="1.0" />
             <field name="instanceDirection" type="VEC3V0" />
-            <field name="instanceOffset" type="float" default-value="0" />
+            <field name="instanceOffset" type="float" default-value="0" since-version="16" />
             <field name="yawFunctionCurve" type="uint32" />
             <field name="yawFunctionCurveAmplitude" type="FloatAnimationReference" />
             <field name="yawFunctionCurveFrequency" type="FloatAnimationReference" />
