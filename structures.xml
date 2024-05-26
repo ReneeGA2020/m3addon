@@ -1947,8 +1947,8 @@
     <structure name="PAR_">
         <description>Particle System</description>
         <versions>
-            <version number="10" size="1296" />
-            <version number="11" size="1300" />
+            <version number="10" size="1300" />
+            <version number="11" size="1304" />
             <version number="12" size="1316" />
             <version number="17" size="1460" />
             <version number="18" size="1464" />
@@ -1992,7 +1992,7 @@
             <field name="alphaHoldTime" type="float" default-value="0.0" since-version="13" /><!-- was unknown74620ffe -->
             <field name="rotationHoldTime" type="float" default-value="0.0" since-version="13" /><!-- was unknown1525cb58 -->
             <field name="particleSizes1" type="Vector3AnimationReferenceV0" />
-            <field till-version="11" name="sizeAnimationMiddle_old" type="float" since-version="12" />
+            <field till-version="11" name="sizeAnimationMiddle_old" type="float" />
             <field name="rotationValues1" type="Vector3AnimationReferenceV0" />
             <field till-version="11" name="rotationAnimationMiddle_old" type="float" />
             <field name="initialColor1" type="ColorAnimationReference" />
